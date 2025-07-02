@@ -8,7 +8,7 @@ const devConfig = {
   devServer: {
     port: 8080,
     historyApiFallback: {
-      index: 'index.html',
+      historyApiFallback: true,
     },
   },
   plugins: [
@@ -18,7 +18,7 @@ const devConfig = {
         marketing: 'marketing@http://localhost:8081/remoteEntry.js',
       },
       shared: packageJson.dependencies,
-    })
+    }),
   ],
 };
 
